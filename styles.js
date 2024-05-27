@@ -7,33 +7,38 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
+  :root {
+    --blackish: #0C0C0C;
+    --yellow: #FFF455;
+    --pink: #FF0080;
+    --blue: #135D66;
+  }
+
   body {
     margin: 0;
-    background: #0C0C0C;
+    background: var(--blackish);
     font-family: Verdana;
     line-height: 1.3;
   }
 
   h1 {
     font-weight: 200;
-    color: #FF0080;
-    margin: 20px 0 0 0;
+    color: var(--pink);
+    margin: 20px 0;
     text-align: center;
   }
 
-  ul {
-    padding-inline-start: 0;
+  .carousel-item {
+    margin:  0;
+    background: var(--blue);
+    padding: 20px;
+    color: var(--yellow);
+    width: 100%;
+    font-size: 20px;
   }
 
-  li {
-    list-style-type: none;
-    margin:  0;
-    background: #007F73;
-    color: #FFF455;
-    width: 100%;
-    padding: 5% 15%;
-    margin: 10% 0;
-    font-size: 20px;
+  .question {
+    margin: 50px 0;
   }
 
   .answer {
@@ -42,9 +47,9 @@ export const GlobalStyle = createGlobalStyle`
     text-align: right;
   }
 
-  button {
-    background: #0C0C0C;
-    color: #FF0080;
+  .answer-button {
+    background: var(--blackish);
+    color: var(--pink);
     padding: 10px;
     border-radius: 20px;
     width: 150px;
