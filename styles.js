@@ -45,6 +45,7 @@ export const GlobalStyle = createGlobalStyle`
     font-style: italic;
     font-size: 16px;
     text-align: right;
+    margin: 40px 0;
   }
 
   .answer-button {
