@@ -1,4 +1,3 @@
-import styled from "styled-components";
 import quizitems from "@/lib/data";
 import { useState } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
